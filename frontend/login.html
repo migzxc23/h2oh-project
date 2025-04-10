@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2Oh! Community Pool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Preview3.jpg" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="pool.html">Pools</a></li>
+            <li><a href="#cottage">Cottage</a></li>
+            <li><a href="#rates">Rates</a></li>
+            <li><a href="#sched">Schedule</a></li>
+            <li><a href="#rules">Rules</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="btn" onclick="openModal('loginModal')">Log In</button>
+            <button class="btn" onclick="openModal('signupModal')">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="hero" id="home">
+        <div class="hero-text">
+            <h1>Welcome to H2Oh! Community Pool</h1>
+            <p>Your perfect destination for relaxation and recreation.</p>
+            
+            <a href="#content-section" class="scroll-down">
+                <img src="down-arrow.png" alt="Scroll Down">
+            </a>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="content-section">
+        <h2>Overview</h2>
+        <p>
+            Refresh your body and mind, renew your energy, and find inspiration in every swim. 
+            Whether you're here to relax, exercise, or connect, H2Oh! Community Pool is your place to dive in and enjoy. 
+            With our well-appointed pools and cottages and quality services, whether for business or leisure, 
+            our accommodations are designed to cater to every need, ensuring relaxation and convenience at every turn.
+        </p>
+
+        <p>
+            Our commitment to excellence extends beyond our pools and cottages to our customer service. 
+            Our friendly and knowledgeable staff are here to assist you, ensuring that your experience is nothing short of exceptional. 
+            We take pride in creating a welcoming atmosphere where you can unwind and enjoy your time with us.
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="content-section">
+        <h2>About H2Oh! Community Pool</h2>
+        <p>
+            At H2Oh! Community Pool, we take pride in offering quality services and amenities that cater to the needs of our guests. 
+            Our pools are designed for both relaxation and recreation, providing a perfect escape from the hustle and bustle of everyday life. 
+            Whether you're looking to take a refreshing dip, enjoy a leisurely swim, or simply soak up the sun, our pools are the ideal destination.
+        </p>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Log In</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit" class="btn">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" required>
+
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="app.js"></script>
+
+</body>
+</html>

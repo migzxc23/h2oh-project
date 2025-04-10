@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS BOOKING_DB (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    booking_date TIMESTAMP NOT NULL,
+    booking_details VARCHAR(255)
+);
